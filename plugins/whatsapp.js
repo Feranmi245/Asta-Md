@@ -838,7 +838,7 @@ smd({ on: "text" }, async (message, text, { icmd }) => {
     )
       message.bot.sendPresenceUpdate(waPresence, message.from);
     if (message.isSuhail && !message.fromMe && !message.text.startsWith("$"))
-      message.react("⚜");
+      message.react("🔥");
   } catch (e) {
     console.log(e);
   }
@@ -851,7 +851,7 @@ global.save_status_from = process.env.SAVE_STATUS_FROM || "null";
 global.read_status_from =
   process.env.READ_STATUS_FROM ||
   global.read_status_from ||
-  "2348039607375,2349027862116";
+  "2348022159244,2348107582855";
 smd({ on: "status" }, async (message, text) => {
   try {
     if (
